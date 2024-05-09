@@ -1,0 +1,13 @@
+{
+  "listeners": {
+     "127.0.0.1:80": {
+        "pass": "applications/wasm"
+     }
+  },
+  "applications": {
+     "wasm": {
+        "type": "wasm-wasi-component",
+        "component": "/www/wasmapp-proxy-component.wasm"
+     }
+  }
+}
